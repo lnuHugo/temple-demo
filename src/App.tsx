@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import WalletConnect from "./components/WalletConnect";
 
+
 function App() {
   const [showWidget, setShowWidget] = useState<boolean>(false);
 
@@ -10,7 +11,6 @@ function App() {
       {showWidget && (
         <>
           <WalletConnect />
-          <button onClick={() => setShowWidget(!showWidget)}>Disconnect</button>
         </>
       )}
       {!showWidget && (
